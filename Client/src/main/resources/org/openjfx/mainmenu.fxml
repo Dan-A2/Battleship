@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.view.mainmenu.MainMenuView">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../images/background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="startBtn" layoutX="325.0" layoutY="75.0" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: #000080;" text="start game" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="spectateBtn" layoutX="337.0" layoutY="175.0" mnemonicParsing="false" onAction="#spectate" style="-fx-background-color: #000080;" text="spectate" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="scoreBoardBtn" layoutX="323.0" layoutY="275.0" mnemonicParsing="false" onAction="#showScoreboard" style="-fx-background-color: #000080;" text="scoreboard" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="infoBtn" layoutX="365.0" layoutY="375.0" mnemonicParsing="false" onAction="#showInfo" style="-fx-background-color: #000080;" text="info" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
